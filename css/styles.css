@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+.nav__logo > img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.navbar__links > ul > li {
+    list-style: none;
+}
+
+
+
+/* .navbar{
+    justify-content: space-between;
+} */
+
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar_link{
+    align-items: center;
+    justify-content: space-around;
+
+}
