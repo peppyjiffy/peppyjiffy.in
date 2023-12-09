@@ -3,29 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/peppyjiffy logo.jpeg">
+    <link rel="icon" href="images/peppyjiffy-logo.png">
     <link rel="stylesheet" href="css/styles.css">
     <title>Peppy Jiffy</title>
+
+    <script src="https://kit.fontawesome.com/4b3e491d19.js" crossorigin="anonymous"></script>
     
 </head>
 <body>
-    <div class="wrapper">
-        <!-- <header id="home" > -->
+    <div class="container">
+        <header id="home">
             <nav class="navbar flex">
-                <div class="nav__logo flex">
-                    <img src="images/peppyjiffy logo.jpeg" alt="">
-                    <span>peppy jiffy</span>
+                <div class="nav__logo ">
+                    <a href="" class="flex">
+                        <img class="nav__logo-img" src="images/peppyjiffy-logo.png" alt="">
+                        <span>peppy jiffy</span>
+                    </a>
+                    
                 </div>
-                <div class="navbar__links ">
-                    <ul class="flex navbar__link">     
-                        <li>Home</li>
-                        <li>Servics</li>
-                        <li>About Us</li>
-                        <li>Contact</li>
+                <div>
+                    <ul class="navbar__links flex">     
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        <!-- </header> -->
+
+            
+        </header>
+
+        <div class="contact-bar flex">
+
+            
+            <span class="text">
+                <i class="fa-solid fa-square-phone"></i>
+                talk to us
+            </span>
+            <p class="contact-bar__contacts flex-col">
+                <span class="contact-bar-phone">+91 99999 99999</span>
+                <span class="contact-bar-email">info@peppyjiffy.com</span>
+            </p>
+        </div>
     </div>
+
+
 </body>
 </html>
