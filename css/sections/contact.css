@@ -1,9 +1,7 @@
 .contact{
-    margin-top: 15px;
-
-    background-color: rgba(255, 255, 0, 0.397);
+    background-color: var(--secondary-color);
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
 
 .contact-image,
@@ -13,15 +11,12 @@
 
 .contact-image{
     object-fit: cover;
-    padding: 20px;
-    height: 1;
+
 }
 
 .contact-image img{
     width: 100%;
     height: 100%;
-
-
 }
 
 .contact-content {
@@ -32,23 +27,23 @@
     flex-direction: column;
 }
 
-.contact-content > h1 {
-    font-size: 38px;
-    
-    text-transform: uppercase;
+.contact-content > h2 {
+    text-transform: capitalize;
 
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
 }
 
 .contact-content__box {
-    margin-bottom: 20px;
+    margin-bottom: 2.4rem;
 }
 
-.contact-content__box h3 {
-    font-size: 24px;
+.contact-content__box h5 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
 }
 
 .contact-content__box p {
-    font-size: 18px;
+    font-weight: 200;
 }
 

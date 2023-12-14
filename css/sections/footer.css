@@ -1,31 +1,29 @@
 .footer__nav {
     display: flex;
     overflow: hidden;
-    height: 45px;
+    height: auto;
 
-    margin: 0 30px;
+    padding: 0 0.5rem;
+
+    background-color: var(--tertiary-color);
 }
 
 .footer__logo {
     display: flex;
     align-items: center;
-    gap: 0.8rem;    
-    flex: 1;
+    gap: 3rem;
     padding-left: 1rem;
 }
 
 
+
 .footer__logo img{
     height: 35px;
-    width: 35px;
-    
+    width: auto;
+    margin-right: 8px;
     object-fit: contain;
 }
 
-.footer__logo h4{
-    font-size: 2rem;
-    
-}
 
 .footer__social {
     list-style: none;
@@ -44,8 +42,8 @@
 }
 
 .footer__social a img {
-    height: 24px;
-    width: 24px;
+    height: 25px;
+    width: auto;
     
     background: radial-gradient(
         circle at 30% 107%,
@@ -54,8 +52,7 @@
         #fd5949 45%,
         #d6249f 60%,
         #285AEB 90%
-    );
-
-    
+    ); 
 }
+
 

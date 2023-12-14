@@ -1,8 +1,8 @@
 .about {
     display: flex;
-    
     gap: 20px;
     padding: 20px;
+    background-color: var(--tertiary-color);
 }
 
 .about-image {
@@ -32,15 +32,13 @@
 .about-content {
     flex: 1;
 
-    background-color: rgba(255, 255, 0, 0.678);
+    background-color: var(--primary-color);
     
     padding: 20px;
     
 }
 
 .about-content__subtitle {
-    font-size: 30px;
-    font-weight: 600;
     text-align: center;
     text-transform: capitalize;
 
@@ -48,9 +46,6 @@
 }
 
 .about-content__desc {
-    font-size: 18px;
-    line-height: 24px;
-    
     padding: 20px;
     color: rgba(39, 36, 36, 0.842);
 }
