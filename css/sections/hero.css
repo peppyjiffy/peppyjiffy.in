@@ -62,6 +62,7 @@
     flex-direction: column;
 
     padding: 20px;
+    position: relative;
 }
 
 .hero-content__title {
@@ -100,7 +101,34 @@
     background-color: #34b7f1;
 }
 
-.hero-content__whatsapp {
+.whatsapp_button {
     background-color: #25d366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: fixed;
+    bottom: 12%;
+    right: 10%;
+    z-index: 5;
+
 }
 
+.whatsapp_button a img {
+    height: 35px;
+    width: auto;
+
+    transition: transform 0.3s ease-in;
+}
+
+.whatsapp_button:hover a img,
+.whatsapp_button:active a img {
+    transform: scale(1.4);
+
+}
+
+.whatsapp_button:hover,
+.whatsapp_button:active {
+    background: transparent;
+    border: none;
+}
