@@ -25,18 +25,42 @@
     object-fit: contain;
 }
 
-.header__menu,
-.header__menu-mobile {
+.header__menu {
     list-style: none;
 
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
+    transition: 0.4s ease-in-out;
+}
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 5px;
 }
 
-.header__menu-mobile {
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.hamburger-menu.active .bar:nth-child(2){
     display: none;
 }
+
+.hamburger-menu.active .bar:nth-child(1){
+    transform: translateY(4px) rotate(45deg);
+}
+.hamburger-menu.active .bar:nth-child(3){
+    transform: translateY(-4px) rotate(-45deg);
+}
+
 
 .header__menu li {
     font-size: 16px;

@@ -103,7 +103,7 @@ button {
 .services,
 .about
 {
-    padding-top: 40px;
+    padding-top: 45px;
 }
 
 /* header section */
@@ -111,7 +111,6 @@ button {
     .header__nav {
         background-color: var(--bg-color1);
         color: rgba(255, 255, 255, 0.897);
-
     }
 
     .header__logo > *{
@@ -122,12 +121,6 @@ button {
         height: 30px;
     }
 
-    .header__menu-mobile {
-        display: inherit;
-        margin-right: 10px;
-
-        cursor: pointer;
-    }
 
     .header__menu {
         flex-direction: column;
@@ -137,7 +130,7 @@ button {
 
         background-color: var(--bg-color1);
         opacity: 0.904;
-        right: 0;
+        right: -100%;
         top: 40px;
         height: 400px;
         width: 60%;
@@ -146,7 +139,10 @@ button {
         margin: 0 auto;
         text-align: center;
 
-        display: none;
+    }
+
+    .header__menu.active {
+        right: 0;
     }
 
     .header__menu li{
@@ -156,6 +152,19 @@ button {
         border-bottom: 2px solid yellowgreen;
     }
 
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .hamburger-menu{
+        margin-right: 10px;
+    }
+    .hamburger-menu .bar {
+        width: 25px;
+        height: 2px;
+    }
 }
 
 /* hero section */
@@ -164,8 +173,20 @@ button {
         flex-direction: column;
         height: auto;
     }
+    .hero-image__overlay{
+        width: 85vw;
+    }
 }
 
+@media only screen and (max-width: 420px) {
+    .hero-image__overlay{
+        width: 88vw;
+    }
+
+    .hero-image1 {
+        display: none;
+    }
+}
 
 /* services section */
 @media only screen and (max-width: 620px) {
@@ -204,6 +225,7 @@ button {
 
     .contact {
         position: relative;
+        max-height: 90vh;
     }
 
     .contact-image img{
@@ -216,10 +238,23 @@ button {
         background-color: #fff;
 
         opacity: 0.9;
-        padding: 30px;
+        padding: 30px ;
         
         inset: 0;
         z-index: 2;
+        
+        width: 72vw;
+        
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .contact {
+        max-height: 70vh;
+    }
+
+    .contact-content {
+        width: fit-content;
     }
 }
 
